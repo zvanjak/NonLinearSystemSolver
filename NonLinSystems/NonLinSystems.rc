@@ -1,0 +1,1353 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Croatian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HRV)
+#ifdef _WIN32
+LANGUAGE LANG_CROATIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\NonLinSystems.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolesv.rc""       // OLE server resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+#endif    // Croatian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\NonLinSystems.ico"
+IDR_NLSYSTYPE           ICON    DISCARDABLE     "res\\NonLinSystemsDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_NLSYSTYPE_SRVR_IP   BITMAP  MOVEABLE PURE   "res\\IToolbar.bmp"
+IDR_WINDOW_SIZE         BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_COMMANDS            BITMAP  DISCARDABLE     "res\\commands.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_NLSYSTYPE_SRVR_IP TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_WINDOW_SIZE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_PLOT_X_LEFT
+    BUTTON      ID_PLOT_X_RIGHT
+    BUTTON      ID_PLOT_Y_UP
+    BUTTON      ID_PLOT_Y_DOWN
+    SEPARATOR
+    BUTTON      ID_PLOT_Y_EXPAND_WINDOW
+    BUTTON      ID_PLOT_Y_CONDENSE_WINDOW
+    BUTTON      ID_PLOT_X_EXPAND
+    BUTTON      ID_PLOT_X_CONDENSE
+    BUTTON      ID_PLOT_EXPAND_BOTH
+    BUTTON      ID_PLOT_CONDENSE_BOTH
+    SEPARATOR
+    BUTTON      ID_MOVE_CENTER_UP
+    BUTTON      ID_MOVE_CENTER_DOWN
+    BUTTON      ID_MOVE_CENTER_RIGHT
+    BUTTON      ID_MOVE_CENTER_LEFT
+    BUTTON      ID_MOVE_CENTER_CLOSER
+    BUTTON      ID_MOVE_CENTER_FURTHER
+    SEPARATOR
+    BUTTON      ID_ROTATE_LEFT
+    BUTTON      ID_ROTATE_RIGHT
+    BUTTON      ID_ROTATE_UP
+    BUTTON      ID_ROTATE_DOWN
+    BUTTON      ID_PLOT_GET_CLOSER
+    BUTTON      ID_PLOT_GET_FARTHER
+    SEPARATOR
+    BUTTON      ID_RESET_MUL
+END
+
+IDR_COMMANDS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_PLOT_TRAJECTORY
+    BUTTON      ID_PLOT_PHASE_CURVE
+    BUTTON      ID_FOURIER_DRAW
+    SEPARATOR
+    BUTTON      ID_ANAL_LOCATE_BIF
+    BUTTON      ID_ANAL_CALC_LYAP_EXP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About NonLinSystems...",     ID_APP_ABOUT
+    END
+END
+
+IDR_NLSYSTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Differential equations\tCtrl+D", ID_EDIT_DIFF_EQUATIONS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Bifurcation points",         ID_VIEW_BIF_POINTS
+        MENUITEM "&Lyapunov exponents",         ID_VIEW_LYAP_EXP
+    END
+    POPUP "&Plot"
+    BEGIN
+        MENUITEM "&Trajectory",                 ID_PLOT_TRAJECTORY
+        MENUITEM "&Phase trajectory",           ID_PLOT_PHASE_CURVE
+        MENUITEM "Draw &Fourier spectrum",      ID_FOURIER_DRAW
+        MENUITEM SEPARATOR
+        MENUITEM "&Equilibrium solutions",      ID_PLOT_EQUIL_SOLUTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Bifurcation surface",        ID_PLOT_BIFUR_SURFACE
+        MENUITEM "Bifurcation &diagram",        ID_PLOT_BIFUR_DIAGRAM
+        MENUITEM SEPARATOR
+        MENUITEM "&Lyapunov exponents",         ID_PLOT_LIAPUNOV_EXP
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Analyse"
+    BEGIN
+        MENUITEM "Locate &bifurcation points",  ID_ANAL_LOCATE_BIF
+        MENUITEM "Calculate &Lyapunov exponents", ID_ANAL_CALC_LYAP_EXP
+        MENUITEM SEPARATOR
+        MENUITEM "Calculate &equilibrium solution", ID_ANAL_CALC_EQU_SOL
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Options",                    ID_OPTIONS_SET_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Set legend position",        ID_PLOT_SET_LEGEND_POS
+        MENUITEM "Show legend",                 ID_OPTIONS_SHOW_LEGEND
+        MENUITEM SEPARATOR
+        MENUITEM "Set bifurcation points legend position", 
+                                                ID_OPTIONS_SET_BIF_LEGEND_POS
+
+        MENUITEM "Show bifurcation points in equilibrium.surface plot", 
+                                                ID_OPTIONS_SHOW_BIF_IN_EQU_SURF
+
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About NonLinSystems...",     ID_APP_ABOUT
+    END
+END
+
+IDR_NLSYSTYPE_SRVR_EMB MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Update\tCtrl+S",             ID_FILE_UPDATE
+        MENUITEM "Save Copy &As...",            ID_FILE_SAVE_COPY_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Differential equations\tCtrl+D", ID_EDIT_DIFF_EQUATIONS
+    END
+    POPUP "&Plot"
+    BEGIN
+        MENUITEM "&Trajectory",                 ID_PLOT_TRAJECTORY
+        MENUITEM "&Phase trajectory",           ID_PLOT_PHASE_CURVE
+        MENUITEM "Draw Fourier spectrum",       ID_FOURIER_DRAW
+        MENUITEM SEPARATOR
+        MENUITEM "&Equilibrium solutions",      ID_PLOT_EQUIL_SOLUTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Bifurcation surface",        ID_PLOT_BIFUR_SURFACE
+        MENUITEM "Bifurcation &diagram",        ID_PLOT_BIFUR_DIAGRAM
+        MENUITEM SEPARATOR
+        MENUITEM "&Lyapunov exponents",         ID_PLOT_LIAPUNOV_EXP
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Analyse"
+    BEGIN
+        MENUITEM "Locate &bifurcation points",  ID_ANAL_LOCATE_BIF
+        MENUITEM "Calculate &Lyapunov exponents", ID_ANAL_CALC_LYAP_EXP
+        MENUITEM SEPARATOR
+        MENUITEM "Calculate &equilibrium solution", ID_ANAL_CALC_EQU_SOL
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Options",                    ID_OPTIONS_SET_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Set legend position",        ID_PLOT_SET_LEGEND_POS
+        MENUITEM "Show legend",                 ID_OPTIONS_SHOW_LEGEND
+        MENUITEM SEPARATOR
+        MENUITEM "Set bifurcation points legend position", 
+                                                ID_OPTIONS_SET_BIF_LEGEND_POS
+
+        MENUITEM "Show bifurcation points in equilibrium.surface plot", 
+                                                ID_OPTIONS_SHOW_BIF_IN_EQU_SURF
+
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About NonLinSystems...",     ID_APP_ABOUT
+    END
+END
+
+IDR_NLSYSTYPE_SRVR_IP MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Differential equations\tCtrl+D", ID_EDIT_DIFF_EQUATIONS
+    END
+    POPUP "&Plot"
+    BEGIN
+        MENUITEM "&Trajectory",                 ID_PLOT_TRAJECTORY
+        MENUITEM "&Phase trajectory",           ID_PLOT_PHASE_CURVE
+        MENUITEM "Draw Fourier spectrum",       ID_FOURIER_DRAW
+        MENUITEM SEPARATOR
+        MENUITEM "&Equilibrium solutions",      ID_PLOT_EQUIL_SOLUTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Bifurcation surface",        ID_PLOT_BIFUR_SURFACE
+        MENUITEM "Bifurcation &diagram",        ID_PLOT_BIFUR_DIAGRAM
+        MENUITEM SEPARATOR
+        MENUITEM "&Lyapunov exponents",         ID_PLOT_LIAPUNOV_EXP
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Analyse"
+    BEGIN
+        MENUITEM "Locate &bifurcation points",  ID_ANAL_LOCATE_BIF
+        MENUITEM "Calculate &Lyapunov exponents", ID_ANAL_CALC_LYAP_EXP
+        MENUITEM SEPARATOR
+        MENUITEM "Calculate &equilibrium solution", ID_ANAL_CALC_EQU_SOL
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Options",                    ID_OPTIONS_SET_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Set legend position",        ID_PLOT_SET_LEGEND_POS
+        MENUITEM "Show legend",                 ID_OPTIONS_SHOW_LEGEND
+        MENUITEM SEPARATOR
+        MENUITEM "Set bifurcation points legend position", 
+                                                ID_OPTIONS_SET_BIF_LEGEND_POS
+
+        MENUITEM "Show bifurcation points in equilibrium.surface plot", 
+                                                ID_OPTIONS_SHOW_BIF_IN_EQU_SURF
+
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About NonLinSystems...",     ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+IDR_NLSYSTYPE_SRVR_IP ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EDIT_DIFF_EQUATIONS, VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_SRVR,    VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_NLSYSTYPE_SRVR_EMB ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EDIT_DIFF_EQUATIONS, VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_UPDATE,         VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About NonLinSystems"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "NLSys Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1997 by Zvonimir Vanjak",IDC_STATIC,40,38,
+                    119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+    LTEXT           "Program for nonlinear-system analysis",IDC_STATIC,40,24,
+                    118,8
+END
+
+IDD_TRAJECTORY_PLOT_PARAM DIALOG DISCARDABLE  0, 0, 391, 284
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameters for trajectory plotting"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Plotting &variables",IDC_STATIC,21,53,91,95
+    EDITTEXT        IDC_PLOTPARAM_TIME_VAR1,63,65,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTPARAM_TIME_VAR2,63,83,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTPARAM_TIME_VAR3,63,101,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTPARAM_TIME_VAR4,63,120,40,14,ES_AUTOHSCROLL
+    LTEXT           "&Interval :",IDC_STATIC,215,69,24,8
+    EDITTEXT        IDC_PLOTPARAM_T1,245,67,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTPARAM_T2,288,67,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTPARAM_STEP,245,86,26,12,ES_AUTOHSCROLL
+    LTEXT           "Sa&ve :",IDC_STATIC,280,89,19,8
+    EDITTEXT        IDC_PLOTPARAM_SAVE_NUM,302,87,26,12,ES_AUTOHSCROLL
+    LTEXT           "&Eps :",IDC_STATIC,216,107,16,8
+    EDITTEXT        IDC_PLOTPARAM_EPS,245,104,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTPARAM_PLOT_T1,262,127,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTPARAM_PLOT_T2,302,127,34,12,ES_AUTOHSCROLL
+    LTEXT           "Chan&ging parameter :",IDC_STATIC,188,175,66,8
+    EDITTEXT        IDC_PLOTPARAM_CHANGING_PAR,291,171,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PAR_VALUES,291,188,83,14,ES_AUTOHSCROLL
+    LTEXT           "&Window title",IDC_STATIC,188,213,40,8
+    EDITTEXT        IDC_TRAJECTORY_PLOT_TITLE,235,210,110,14,ES_AUTOHSCROLL
+    LTEXT           "Initial &conditions",IDC_STATIC,23,156,46,8
+    EDITTEXT        IDC_PLOTPARAM_START_VAL,34,169,56,67,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "&Parameters :",IDC_STATIC,103,156,43,9
+    EDITTEXT        IDC_PLOTPARAM_PARAM_VAL,113,169,58,67,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "&Legend",IDC_STATIC,111,53,64,95
+    EDITTEXT        IDC_PLOTPARAM_LEGEND_VAR1,121,65,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTPARAM_LEGEND_VAR2,121,83,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTPARAM_LEGEND_VAR3,121,101,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTPARAM_LEGEND_VAR4,121,120,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,136,253,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,204,253,50,14
+    CONTROL         "&single parameter value",IDC_TPLOTPARAM_SINGLE_PAR,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,43,25,86,12
+    CONTROL         "&multiple parameter value",IDC_TPLOTPARAM_MULTI_PARAM,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,136,25,86,12
+    CONTROL         "&different scale (same max. value)",IDC_SCALE_Y_SAME,
+                    "Button",BS_AUTORADIOBUTTON | BS_MULTILINE | WS_DISABLED | 
+                    WS_GROUP,261,19,112,15
+    CONTROL         "s&ame scale for all variables",IDC_SCALE_Y_DIFFERENT,
+                    "Button",BS_AUTORADIOBUTTON | BS_MULTILINE | WS_DISABLED | 
+                    WS_GROUP,261,34,100,11
+    GROUPBOX        "Plot type",IDC_STATIC,21,10,228,36
+    LTEXT           "Var 1",IDC_STATIC,37,69,16,8
+    LTEXT           "Var 3",IDC_STATIC,37,104,16,8
+    LTEXT           "Var 2",IDC_STATIC,37,86,16,8
+    LTEXT           "Var 4",IDC_STATIC,37,122,16,8
+    GROUPBOX        "Y-axis scaling",IDC_STATIC,252,10,122,38
+    LTEXT           "Values (separated with comma) :",IDC_STATIC,188,191,99,
+                    8
+    CTEXT           " --- ",IDC_STATIC,275,68,9,8
+    LTEXT           "Stepsize :",IDC_STATIC,215,88,27,8
+    GROUPBOX        "Integrating parameters",IDC_STATIC,210,53,138,94
+    LTEXT           "Plot for time :",IDC_STATIC,216,129,41,8
+END
+
+IDD_INPUT_DIFFEQ_SYSTEM DIALOG DISCARDABLE  0, 0, 391, 149
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input system of differential equations"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Equations :",-1,13,10,36,8
+    EDITTEXT        IDC_IDES_DIFFEQ_SYS,22,26,160,77,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Start &conditions :",-1,195,10,54,8
+    EDITTEXT        IDC_IDES_START_VAL,207,26,65,77,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "&Parameters :",-1,290,10,50,10
+    EDITTEXT        IDC_IDES_PARAM,301,26,62,77,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "&Independent variable :",-1,14,119,79,10
+    EDITTEXT        IDC_IDES_IND_VAR,99,117,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,216,119,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,307,118,50,14
+END
+
+IDD_PHASE_PLOT_PARAM DIALOG DISCARDABLE  0, 0, 430, 302
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameters for phase trajectory plotting"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Phase &diagram",IDC_STATIC,18,77,120,78
+    EDITTEXT        IDC_PHASE_PLOTPARAM_X,59,90,47,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHASE_PLOTPARAM_Y,59,111,47,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHASE_PLOTPARAM_Z,59,131,47,16,ES_AUTOHSCROLL
+    LTEXT           "&Interval :",IDC_STATIC,169,93,28,9
+    EDITTEXT        IDC_PHASE_PLOTPARAM_T1,207,89,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHASE_PLOTPARAM_T2,263,89,28,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHASE_PLOTPARAM_STEP,207,107,31,14,ES_AUTOHSCROLL
+    LTEXT           "Sa&ve :",IDC_STATIC,244,110,22,9
+    EDITTEXT        IDC_PHASE_PLOTPARAM_SAVE_NUM,268,107,31,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "&Eps :",IDC_STATIC,169,128,19,9
+    EDITTEXT        IDC_PHASE_PLOTPARAM_EPS,207,126,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHASE_PLOTPARAM_PLOT_T1,214,146,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHASE_PLOTPARAM_PLOT_T2,268,146,40,14,ES_AUTOHSCROLL
+    LTEXT           "Chan&ging parameter :",IDC_STATIC,211,195,71,9
+    EDITTEXT        IDC_PHASE_PLOTPARAM_CHANGING_PAR,319,188,47,16,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHASE_PAR_VALUES,319,209,92,16,ES_AUTOHSCROLL
+    LTEXT           "&Window title",IDC_STATIC,211,235,47,9
+    EDITTEXT        IDC_PHASE_PLOT_TITLE,267,232,129,16,ES_AUTOHSCROLL
+    LTEXT           "Initial &conditions :",IDC_STATIC,17,182,55,8
+    EDITTEXT        IDC_PHASE_PLOTPARAM_START_VAL,33,199,65,77,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "&Parameters :",IDC_STATIC,113,182,50,10
+    EDITTEXT        IDC_PHASE_PLOTPARAM_PARAM_VAL,124,198,66,77,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,257,271,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,320,271,50,14
+    LTEXT           "x - axis",IDC_STATIC,24,94,21,9
+    LTEXT           "y - axis",IDC_STATIC,24,114,21,9
+    LTEXT           "z - axis",IDC_STATIC,24,132,21,9
+    CONTROL         "fazni &2D",IDC_PHASE_PLOTPARAM_2D,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,177,31,55,11
+    CONTROL         "fazni &3D",IDC_PHASE_PLOTPARAM_3D,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,177,46,54,14
+    GROUPBOX        "Dimension",IDC_STATIC,154,17,119,46
+    CONTROL         "&different scale (same max. value)",
+                    IDC_PHASE_SCALE_Y_SAME,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE | WS_DISABLED | WS_GROUP,288,30,118,14
+    CONTROL         "s&ame scale for all variables",
+                    IDC_PHASE_SCALE_Y_DIFFERENT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE | WS_DISABLED | WS_GROUP,288,46,120,13
+    GROUPBOX        "Y-axis scaling",IDC_STATIC,277,17,131,44
+    CTEXT           " --- ",IDC_STATIC,244,92,12,9
+    LTEXT           "Stepsize :",IDC_STATIC,169,110,31,9
+    GROUPBOX        "Integrating parameters",IDC_STATIC,162,77,152,94
+    LTEXT           "Values (separated with comma) :",IDC_STATIC,211,213,104,
+                    9
+    CONTROL         "&single parameter value",IDC_PHASE_PLOTPARAM_SINGLE_PAR,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,32,30,101,14
+    CONTROL         "&multiple parameter value",
+                    IDC_PHASE_PLOTPARAM_MULTI_PARAM2,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,32,48,101,11
+    GROUPBOX        "Plot type",IDC_STATIC,18,17,137,46
+    LTEXT           "Plot for time :",IDC_STATIC,169,150,42,8
+    CTEXT           " --- ",IDC_STATIC,254,149,12,9
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 288, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_OPTIONS_STEPMIN,133,54,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OPTIONS_EPS,133,74,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,90,120,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,147,120,50,14
+    CONTROL         "Open &new window for each parameter value",
+                    IDC_OPTIONS_NEW_WINDOW,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE | WS_GROUP,42,24,97,17
+    CONTROL         "Plots for different parameter values in &same window",
+                    IDC_OPTIONS_SAME_WINDOW,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE | WS_GROUP,148,22,108,21
+    LTEXT           "Minimal step for integration",IDC_STATIC,16,58,84,8
+    LTEXT           "Required precision for integration",IDC_STATIC,15,76,
+                    104,8
+    GROUPBOX        "Static",IDC_STATIC,17,13,254,35
+    CONTROL         "Use &color for plotting trajectories",
+                    IDC_OPTIONS_USE_COLOR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,98,117,10
+END
+
+IDD_LOCATE_BIF_POINTS DIALOG DISCARDABLE  0, 0, 358, 278
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Locate bifurcation points"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Start &values for state variables :",IDC_STATIC,12,60,
+                    74,17
+    EDITTEXT        IDC_LOC_BIF_VAR_START,26,81,73,79,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Start values for &parameters :",IDC_STATIC,122,59,69,18
+    EDITTEXT        IDC_LOC_BIF_PAR_START,140,81,72,79,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Start values for left &zero-eigenvector components :",
+                    IDC_STATIC,234,60,109,17
+    EDITTEXT        IDC_LOC_BIF_EIGEN_START,256,81,74,79,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "&Number of searches :",IDC_STATIC,16,178,68,8
+    EDITTEXT        IDC_LOC_BIF_SEARCH_NUM,93,175,40,14,ES_AUTOHSCROLL
+    LTEXT           "&Interval for parametar values :",IDC_STATIC,16,201,94,
+                    8
+    EDITTEXT        IDC_LOC_BIF_P1,126,199,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOC_BIF_P2,185,199,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,17,241,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,89,241,50,14
+    PUSHBUTTON      "&Automatic calculation for given number of searches",
+                    IDC_LOC_BIF_AUTOMATIC,156,241,181,14
+    CONTROL         "&Saddle-node bifurcation",IDC_LOC_BIF_SNB,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,54,27,91,10
+    CONTROL         "&Hopf bifurcation",IDC_LOC_BIF_HOPF,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,207,27,66,10
+    PUSHBUTTON      "Set state variables to &equilibirum solutions",
+                    IDC_LOC_BIF_EQU_SOL_STATE_VAR,253,172,84,23,BS_MULTILINE
+    PUSHBUTTON      "&Randomize eigenvector start values",
+                    IDC_LOC_BIF_RANDOMIZE_EIGEN,253,202,84,23,BS_MULTILINE
+    GROUPBOX        "Bifurcation type",IDC_STATIC,20,9,317,39
+    LTEXT           "---",IDC_STATIC,171,200,8,8
+END
+
+IDD_PLOT_EQU_SURFACE DIALOG DISCARDABLE  0, 0, 291, 186
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Draw equilibrium surface"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Surface parameters",IDC_STATIC,21,63,120,78
+    EDITTEXT        IDC_PLOT_EQU_X,62,76,47,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_EQU_Y,62,97,47,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_EQU_Z,62,117,47,16,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "&Range of values",IDC_STATIC,152,63,114,60
+    EDITTEXT        IDC_PLOT_EQU_RANGE1_FROM,161,77,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_EQU_RANGE1_TO,220,77,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_EQU_RANGE2_FROM,161,98,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_PLOT_EQU_RANGE2_TO,220,98,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "&2D curve",IDC_PLOT_EQU_2D,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,43,29,55,11
+    CONTROL         "&3D surface",IDC_PLOT_EQU_3D,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,115,28,54,14
+    DEFPUSHBUTTON   "OK",IDOK,88,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,153,156,50,14
+    LTEXT           "x - axis",IDC_STATIC,27,80,21,9
+    LTEXT           "y - axis",IDC_STATIC,27,100,21,9
+    LTEXT           "z - axis",IDC_STATIC,27,118,21,9
+    GROUPBOX        "Surface dimension",IDC_STATIC,22,16,158,34
+    CONTROL         "Show located bifurcation points in diagram",
+                    IDC_PLOT_EQU_SHOW_BIF,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,188,24,92,21
+END
+
+IDD_SHOW_BIF_POINTS DIALOGEX 0, 0, 520, 277
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Bifurcation points"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Saddle-node bifurcation points",IDC_STATIC,7,15,96,8
+    LISTBOX         IDC_LIST_SNB_POINTS,16,33,356,81,LBS_NOINTEGRALHEIGHT | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP,WS_EX_LEFTSCROLLBAR
+    LTEXT           "&Hopf bifurcation points",IDC_STATIC,7,130,72,8
+    LISTBOX         IDC_LIST_HOPF_POINTS,16,147,356,80,LBS_NOINTEGRALHEIGHT | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,200,249,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,269,250,50,14
+    EDITTEXT        IDC_SNB_EIGENVAL,397,33,105,83,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_HOPF_EIGENVAL,399,148,104,80,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Eigenvalues at bifurcation point",IDC_STATIC,387,15,100,
+                    8
+    LTEXT           "Eigenvalues at bifurcation point",IDC_STATIC,389,130,
+                    100,8
+END
+
+IDD_CALC_LYAP_EXP DIALOG DISCARDABLE  0, 0, 427, 180
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calculate Lyapunov exponents"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Start &values for state variables :",IDC_STATIC,12,13,
+                    74,17
+    EDITTEXT        IDC_CALC_LYAP_VAR_START,26,35,73,78,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "&Parameters values :",IDC_STATIC,116,15,69,8
+    EDITTEXT        IDC_CALC_LYAP_PAR_VAL,129,35,72,79,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Max. &number of iterations :",IDC_STATIC,245,49,84,8
+    EDITTEXT        IDC_calc_LYAP_MAX_ITER_NUM,357,46,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_calc_LYAP_MIN_STEPSIZE,357,62,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CALC_LYAP_EPS,357,79,40,14,ES_AUTOHSCROLL
+    LTEXT           "&Relative required convergence :",IDC_STATIC,245,108,
+                    102,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_CALC_LYAP_EPS_REL,357,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CALC_LYAP_EPS_ABS,357,121,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CALC_LYAP_T,357,137,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,56,144,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,123,144,50,14
+    LTEXT           "Natural period of system :",IDC_STATIC,245,140,80,8
+    LTEXT           "Precision in integrate routine :",IDC_STATIC,245,81,94,
+                    8
+    LTEXT           "Min. stepsize in integrate routine :",IDC_STATIC,245,65,
+                    106,8
+    GROUPBOX        "Options",IDC_STATIC,237,33,166,125
+    LTEXT           "Absolute required convergence :",IDC_STATIC,245,124,104,
+                    8
+END
+
+IDD_SHOW_LYAP_EXP DIALOGEX 0, 0, 503, 178
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Lyapunov exponents"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&State variable and parameter values",IDC_STATIC,10,15,
+                    114,8
+    LISTBOX         IDC_SHOW_LYAP_LIST_VAL,18,31,356,99,LBS_NOINTEGRALHEIGHT | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP,WS_EX_LEFTSCROLLBAR
+    DEFPUSHBUTTON   "OK",IDOK,190,147,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,264,147,50,14
+    EDITTEXT        IDC_SHOW_LYAP_EXP_VAL,402,31,85,100,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Lyapunov exponents",IDC_STATIC,394,15,67,8
+END
+
+IDD_PLOT_LYAP_EXP DIALOG DISCARDABLE  0, 0, 512, 222
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Plot Lyapunov exponents"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Fixed &values for initial conditions and parametar values :",
+                    IDC_STATIC,14,17,104,16
+    EDITTEXT        IDC_PLOT_LYAP_FIXED_VAL,31,36,84,100,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Change &parameter :",IDC_STATIC,14,156,63,8
+    EDITTEXT        IDC_PLOT_LYAP_CHANGE_PAR,81,154,31,14,ES_AUTOHSCROLL
+    LTEXT           "&Interval :",IDC_STATIC,135,156,28,8
+    EDITTEXT        IDC_PLOT_LYAP_X1,167,154,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_LYAP_X2,212,154,30,14,ES_AUTOHSCROLL
+    LTEXT           "&Step :",IDC_STATIC,259,156,20,8
+    EDITTEXT        IDC_PLOT_LYAP_STEP,282,154,33,14,ES_AUTOHSCROLL
+    LTEXT           "Max. &number of iterations :",IDC_STATIC,339,49,84,8
+    EDITTEXT        IDC_PLOT_LYAP_MAX_ITER_NUM,451,46,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_LYAP_MIN_STEPSIZE,451,63,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_LYAP_EPS,451,80,40,14,ES_AUTOHSCROLL
+    LTEXT           "&Relative required convergence :",IDC_STATIC,339,108,
+                    102,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_PLOT_LYAP_EPS_REL,451,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_LYAP_EPS_ABS,451,122,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOT_LYAP_T,451,138,40,14,ES_AUTOHSCROLL
+    CONTROL         "&Connect nearby points with line",IDC_PLOT_LYAP_CONNECT,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,164,46,114,10
+    CONTROL         "Plot &mark for each point",IDC_PLOT_LYAP_MARK,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,164,61,91,10
+    CONTROL         "Use &already calculated L. exponents",
+                    IDC_PLOT_LYAP_USE_ALREADY_CALC,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,162,102,131,10
+    CONTROL         "&Force calculating for all needed L. exp.",
+                    IDC_PLOT_LYAP_CALC_ALL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,162,118,138,10
+    DEFPUSHBUTTON   "OK",IDOK,199,186,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,261,186,50,14
+    GROUPBOX        "Plot options",IDC_STATIC,148,33,166,44
+    GROUPBOX        "Calculating options",IDC_STATIC,148,89,167,46
+    LTEXT           "---",IDC_STATIC,201,156,8,8
+    LTEXT           "Natural period of system :",IDC_STATIC,339,140,80,8
+    LTEXT           "Precision in integrate routine :",IDC_STATIC,339,82,94,
+                    8
+    LTEXT           "Min. stepsize in integrate routine :",IDC_STATIC,339,66,
+                    106,8
+    GROUPBOX        "Options",IDC_STATIC,331,34,166,125
+    LTEXT           "Absolute required convergence :",IDC_STATIC,339,124,104,
+                    8
+END
+
+IDD_PLOT_SPECTRUM DIALOG DISCARDABLE  0, 0, 337, 188
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Plot Fourier spectrum"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,113,154,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,179,154,50,14
+    EDITTEXT        IDC_PLOTSPECTRUM_VAR1,70,26,47,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTSPECTRUM_VAR2,70,47,47,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTSPECTRUM_VAR3,70,67,47,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTSPECTRUM_VAR4,70,89,47,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTSPECTRUM_LEGEND_VAR1,138,26,47,16,ES_AUTOHSCROLL
+    GROUPBOX        "Spectrum for variables",IDC_STATIC,22,12,195,110
+    EDITTEXT        IDC_PLOTSPECTRUM_LEGEND_VAR2,138,47,47,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTSPECTRUM_LEGEND_VAR3,138,67,47,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLOTSPECTRUM_LEGEND_VAR4,138,89,47,16,ES_AUTOHSCROLL
+    LTEXT           "Var 1",IDC_STATIC,40,30,19,9
+    LTEXT           "Var 3",IDC_STATIC,40,71,19,9
+    LTEXT           "Var 2",IDC_STATIC,40,50,19,9
+    LTEXT           "Var 4",IDC_STATIC,40,92,19,9
+END
+
+IDD_CALC_EQU_SOLUTION DIALOG DISCARDABLE  0, 0, 449, 263
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Calculate equilibrium solution"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "P&arametar values :",IDC_STATIC,14,19,60,8
+    EDITTEXT        IDC_EQU_SOL_PAR_VAL,26,34,66,58,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Start &values for system variables :",IDC_STATIC,103,19,
+                    108,8
+    EDITTEXT        IDC_EQU_SOL_SYS_VAR,117,34,71,58,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EQU_SOL_MAX_ITER,266,34,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EQU_SOL_EPS,266,51,40,14,ES_AUTOHSCROLL
+    LTEXT           "&Parameters :",IDC_STATIC,16,128,40,8
+    LISTBOX         IDC_EQU_SOL_PAR_VAL_FOUND,23,140,76,70,
+                    LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    LTEXT           "&System variables :",IDC_STATIC,108,128,58,8
+    LISTBOX         IDC_EQU_SOL_SYS_VAR_FOUND,114,140,196,70,
+                    LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Calculate",IDC_EQU_SOL_CALCULATE,216,78,167,14
+    DEFPUSHBUTTON   "OK",IDOK,146,234,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,210,234,50,14
+    EDITTEXT        IDC_EQU_SOL_EIGENVAL,324,140,109,70,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_DISABLED | WS_VSCROLL
+    GROUPBOX        "Already found equilibirum solutions",IDC_STATIC,7,112,
+                    435,108
+    LTEXT           "Eigenvalues of equilibirum point :",IDC_STATIC,314,121,
+                    76,17
+    LTEXT           "Max. iteration",IDC_STATIC,216,38,43,8
+    LTEXT           "Precision",IDC_STATIC,216,55,30,8
+    GROUPBOX        "Parameters for calculation",IDC_STATIC,7,7,435,94
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "NonLinSystems MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NonLinSystems\0"
+            VALUE "LegalCopyright", "Copyright (C) 1997\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NonLinSystems.EXE\0"
+            VALUE "ProductName", "NonLinSystems Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_TRAJECTORY_PLOT_PARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 277
+    END
+
+    IDD_INPUT_DIFFEQ_SYSTEM, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_PHASE_PLOT_PARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 421
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_LOCATE_BIF_POINTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_PLOT_EQU_SURFACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_SHOW_BIF_POINTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 513
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_CALC_LYAP_EXP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 420
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_SHOW_LYAP_EXP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 496
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PLOT_LYAP_EXP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 505
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_PLOT_SPECTRUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_CALC_EQU_SOLUTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 442
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "NonLinSystems"
+    IDR_NLSYSTYPE           "\nNLSys\nNLSys\nNonLin Files (*.nls)\n.nls\nNonLinSystems.Document\nNLSys Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "NonLinSystems"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_UPDATE          "Update the container to show any changes\nUpdate"
+    ID_FILE_SAVE_COPY_AS    "Save a copy of the active document with a new name\nSave Copy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+    IDS_ERR_NOT_VAR_NAME    "You must enter variable name !!!"
+    IDS_ERR_NOT_SYS_VAR     "You must enter system variable name !!!"
+    IDS_ERR_NO_VAR_ENTERED  "You must enter at least one variable to draw trajectory !!!"
+    IDS_FIRST_EQU_SURF_MUST_BE_PAR 
+                            "At least first parameter must be name of parameter of the system !!!"
+    IDS_NO_EQV_SOL_IN_THIS_INTERVAL 
+                            "There exist no equilibrium solution in given interval !!!"
+    IDS_DIDNT_FIND_BIF_POINT 
+                            "Couldn't find bifurcation point ! \n          Try again ?"
+    IDS_FOURIER_PLOT_ONLY_FOR_TRAJECTORIES 
+                            "Fouriers spectrum plot is possible only after trajectories have been calculated !!!"
+    IDS_BIF_POINTS_FIND_ONLY_FOR_ONE_PAR_SYS 
+                            "Can't find bifurcation points for\n systems with more then one parameter !!"
+    IDS_WRONG_PAR_FOR_BIF_POINTS_LOC 
+                            "Wrong parameters entered for \n locating of bifurcation points !!!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WRONG_PAR_FOR_LYAP_EXP_CALC 
+                            "Wrong parameters entered\n for calculation of Lyapunov exponents !!!"
+    IDS_WRONG_PLOT_TIME     "Plot time out of integrated interval !!!"
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_NOT_SYS_NOT_PAR     "You must enter either system vaiable name\neither parametar variable name !!!"
+    IDS_STRING61205         "either"
+    IDS_FINISHED_WITH_BIF_POINTS_CALC 
+                            "Finished with calculationof\n bifurcation points !!!"
+    IDS_SHOW_LEGEND         """Show legend"""
+    IDS_HIDE_LEGEND         """Hide legend"""
+    IDS_NO_LYAP_EXP_CALC    "No Lyapunov exponents calculated !!!"
+    IDS_FINISHED_WITH_LYAP_EXP_CALC 
+                            "Finished with calculation of Lyapunov exponent !!!"
+    IDS_WRONG_INIT_COND_OR_PAR_VAL 
+                            "Syntax error in initial condition field \n or in parameter value field !!!"
+    IDS_CHG_PAR_NOT_GIVEN   "Changing parametar for multi-parameter\n plot not given !!!"
+    IDS_EMPTY_PARAMETER_LIST "Empty changing parameter list !!!"
+    IDS_VAR1_FOR_MULTI_PAR  "For multiparametar plotting\n first variable must be entered !!!"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PLOT_X_LEFT          "Move plot window to left\nLeft"
+    ID_PLOT_X_RIGHT         "Move plot window to right\nRight"
+    ID_PLOT_Y_UP            "Move plot window up\nUp"
+    ID_PLOT_Y_DOWN          "Move plot window down\nMove down"
+    ID_PLOT_X_EXPAND        "Expands plot window in x-axis direction\nExpand x-axis"
+    ID_PLOT_Y_EXPAND_WINDOW "Expands plot window in y-axis direction\nExpand y-axis"
+    ID_PLOT_X_CONDENSE      "Condenses plot window in x-axis direction\nMagnify x-axis"
+    ID_PLOT_Y_CONDENSE_WINDOW 
+                            "Condeses plot window in y-axis direction\nMagnify y-axis"
+    ID_PLOT_GET_CLOSER      "Move eye closer\nGet closer"
+    ID_PLOT_GET_FARTHER     "Move eye further\nGet further"
+    ID_ROTATE_LEFT          "Rotate left\nRotate left"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ROTATE_RIGHT         "Rotate right\nRotate right"
+    ID_ROTATE_UP            "Rotate up\nRotate up"
+    ID_ROTATE_DOWN          "Rotate down\nRotate down"
+    ID_RESET_MUL            "Reset magnificiation and origin position\nReset plot parameters"
+    ID_PLOT_EXPAND_BOTH     "Expands plot window in both x- and y-axis direction\nExpand window"
+    ID_PLOT_CONDENSE_BOTH   "Condenses plot window in both x- and y-axis direction\nMagnify"
+    ID_PLOT_FOURIER         "Draw Fourier spectrum\nDraw spectrum"
+    ID_ANAL_LOCATE_BIF      "Locating of bifurcation points\nLocate bifurcation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ANAL_CALC_LYAP_EXP   "Calculation of Lyapunov characteristic exponents\nCalculate Lyap.exp."
+    ID_FOURIER_DRAW         "Plot Fourier spectrum of trajectories\nDraw spectrum"
+    ID_TRAJECTORY_PLOT      "Plot trajectory\nTrajectory"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PHASE_DIAGRAM_PLOT   "Plot phase diagram\nPhase diagram"
+    ID_LOC_BIF              "Locate bifurcation points\nBif. points"
+    ID_CALC_LYAP_EXP        "Calculate Lyapunov exponents\nCalc Lyap.exp."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ALREADY_CALCULATING_FOR_THIS_WINDOW 
+                            "Already calculating for this window \n (wait until calculation finishes, and then set new parameters) !!!"
+    IDS_COULDNT_FIND_EQU_SOL 
+                            "Couldn't find equilibirum solution \n Try with another start values for system variables !!!"
+    IDS_ERR_NOT_GIVEN_VAR_NAME "Varible name for plotting not defined !!!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PLOT_TRAJECTORY      "Draw trajectory for given variables\nDraw trajectory"
+    ID_PLOT_PHASE_CURVE     "Draw phase diagram\nDraw phase diagram"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\NonLinSystems.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxolesv.rc"       // OLE server resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

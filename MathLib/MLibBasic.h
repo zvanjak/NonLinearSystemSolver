@@ -1,0 +1,11 @@
+class	Complex;
+class	Polynom;
+class	Vector3D;
+class	Point3D;
+class	Vector;
+class	ComplexVector;
+class	Matrix;
+class	ComplexMatrix;
+class	MathSpace;
+class	DiffSystem;
+class	SparseMatrix;

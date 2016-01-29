@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "MathGraphCtrl", "MathGraphCtrl\MathGraphCtrl.dsp", "{FEAFCCA9-1173-452E-8032-9100A4848C94}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "MathLib30", "..\..\PROJECTS C++\MathLib30\MathLib30.dsp", "{64D048F2-850C-4748-B927-5B0EDD33E065}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mathlib", "Mathlib.vcxproj", "{52B1185B-C93F-4D0B-906E-F66315EF641D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mathlib20", "Mathlib20\Mathlib20.vcxproj", "{33CAAA8F-85C5-475C-8CCA-FC4F36F477EE}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "TemplateTest", "TemplateTest\TemplateTest.dsp", "{FB7A7BDF-C562-4F35-8085-61F9EDF84110}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{4FA2F828-D563-43A4-B31D-9AA7D7F321DE}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "TestFitFunction", "TestFitFunction\TestFitFunction.dsp", "{515B2A03-E0A0-4B3D-9943-DBE9BCA0A9F5}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "TestFunction", "TestFunction\TestFunction.dsp", "{5ED25172-4412-4BEF-819B-DE71855756F2}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "TestIVector", "TestIVector\TestIVector.dsp", "{F0CFE8BC-FFF5-4870-A053-4772DB227429}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "TestMatrix", "TestMatrix\TestMatrix.dsp", "{128BF2AC-6814-4249-AC48-07327456865E}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "TestTypesInterface", "TestTypesInterface\TestTypesInterface.dsp", "{ADB6F8A1-B739-47BC-BF7A-E54ABE5FF87B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Template|x86 = Template|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52B1185B-C93F-4D0B-906E-F66315EF641D}.Debug|x86.ActiveCfg = Debug|Win32
+		{52B1185B-C93F-4D0B-906E-F66315EF641D}.Debug|x86.Build.0 = Debug|Win32
+		{52B1185B-C93F-4D0B-906E-F66315EF641D}.Release|x86.ActiveCfg = Release|Win32
+		{52B1185B-C93F-4D0B-906E-F66315EF641D}.Release|x86.Build.0 = Release|Win32
+		{52B1185B-C93F-4D0B-906E-F66315EF641D}.Template|x86.ActiveCfg = Release|Win32
+		{52B1185B-C93F-4D0B-906E-F66315EF641D}.Template|x86.Build.0 = Release|Win32
+		{33CAAA8F-85C5-475C-8CCA-FC4F36F477EE}.Debug|x86.ActiveCfg = Debug|Win32
+		{33CAAA8F-85C5-475C-8CCA-FC4F36F477EE}.Debug|x86.Build.0 = Debug|Win32
+		{33CAAA8F-85C5-475C-8CCA-FC4F36F477EE}.Release|x86.ActiveCfg = Release|Win32
+		{33CAAA8F-85C5-475C-8CCA-FC4F36F477EE}.Release|x86.Build.0 = Release|Win32
+		{33CAAA8F-85C5-475C-8CCA-FC4F36F477EE}.Template|x86.ActiveCfg = Template|Win32
+		{33CAAA8F-85C5-475C-8CCA-FC4F36F477EE}.Template|x86.Build.0 = Template|Win32
+		{4FA2F828-D563-43A4-B31D-9AA7D7F321DE}.Debug|x86.ActiveCfg = Debug|Win32
+		{4FA2F828-D563-43A4-B31D-9AA7D7F321DE}.Debug|x86.Build.0 = Debug|Win32
+		{4FA2F828-D563-43A4-B31D-9AA7D7F321DE}.Release|x86.ActiveCfg = Release|Win32
+		{4FA2F828-D563-43A4-B31D-9AA7D7F321DE}.Release|x86.Build.0 = Release|Win32
+		{4FA2F828-D563-43A4-B31D-9AA7D7F321DE}.Template|x86.ActiveCfg = Template|Win32
+		{4FA2F828-D563-43A4-B31D-9AA7D7F321DE}.Template|x86.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

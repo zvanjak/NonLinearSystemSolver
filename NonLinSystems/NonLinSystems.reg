@@ -1,0 +1,30 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+HKEY_CLASSES_ROOT\.nls = NonLinSystems.Document
+HKEY_CLASSES_ROOT\NonLinSystems.Document\shell\open\command = NONLINSYSTEMS.EXE %1
+HKEY_CLASSES_ROOT\NonLinSystems.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\NonLinSystems.Document\shell\open\ddeexec\application = NONLINSYSTEMS
+    ; note: the application is optional
+    ;  (it defaults to the app name in "command")
+
+HKEY_CLASSES_ROOT\NonLinSystems.Document = NLSys Document
+HKEY_CLASSES_ROOT\NonLinSystems.Document\protocol\StdFileEditing\server = NONLINSYSTEMS.EXE
+HKEY_CLASSES_ROOT\NonLinSystems.Document\protocol\StdFileEditing\verb\0 = &Edit
+HKEY_CLASSES_ROOT\NonLinSystems.Document\Insertable =
+HKEY_CLASSES_ROOT\NonLinSystems.Document\CLSID = {72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}
+
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29} = NLSys Document
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}\DefaultIcon = NONLINSYSTEMS.EXE,1
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}\LocalServer32 = NONLINSYSTEMS.EXE
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}\ProgId = NonLinSystems.Document
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}\MiscStatus = 32
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}\AuxUserType\3 = NonLinSystems
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}\AuxUserType\2 = NLSys
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}\Insertable = 
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}\verb\1 = &Open,0,2
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}\verb\0 = &Edit,0,2
+HKEY_CLASSES_ROOT\CLSID\{72A8E5B5-43EB-11D1-B621-FFBA54FBBB29}\InprocHandler32 = ole32.dll
