@@ -107,6 +107,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="calc.h" />
     <ClInclude Include="complex.h" />
     <ClInclude Include="DiffSystem.h" />
     <ClInclude Include="Function.h" />
